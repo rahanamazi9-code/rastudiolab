@@ -275,3 +275,207 @@ body{
   border-bottom:1px solid #111;
   width:max-content;
 }
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 1024px){
+
+  header{
+    padding:0 35px;
+  }
+
+  .hero{
+    padding-left:35px;
+    padding-right:35px;
+  }
+
+  .hero-content h1{
+    font-size:90px;
+  }
+
+  .projects-section,
+  .about-section,
+  .services-section,
+  .contact-section{
+    padding-left:35px;
+    padding-right:35px;
+  }
+
+  .projects-grid,
+  .services-grid{
+    grid-template-columns:1fr 1fr;
+  }
+}
+
+@media (max-width: 768px){
+
+  body{
+    padding-top:86px;
+  }
+
+  header{
+    height:86px;
+    padding:0 24px;
+  }
+
+  .logo{
+    margin-left:0;
+  }
+
+  .logo img{
+    width:95px;
+  }
+
+  nav{
+    gap:18px;
+    padding-top:0;
+  }
+
+  nav a{
+    font-size:12px;
+  }
+
+  .hero{
+    min-height:auto;
+    padding:110px 24px 80px;
+  }
+
+  .hero-content h1{
+    font-size:64px;
+    line-height:.95;
+  }
+
+  .hero-content p{
+    font-size:11px;
+    letter-spacing:3px;
+  }
+
+  .hero-description{
+    width:100%;
+    max-width:420px;
+    font-size:16px;
+  }
+
+  .hero-links{
+    flex-direction:column;
+    gap:18px;
+  }
+
+  .projects-section,
+  .about-section,
+  .services-section,
+  .contact-section{
+    padding:80px 24px;
+  }
+
+  .section-heading{
+    display:block;
+  }
+
+  .section-heading h2{
+    font-size:38px;
+    margin-top:18px;
+  }
+
+  .projects-grid,
+  .services-grid{
+    grid-template-columns:1fr;
+  }
+
+  .about-section h2{
+    font-size:36px;
+    line-height:1.25;
+  }
+
+  .service-item{
+    grid-template-columns:1fr;
+    gap:15px;
+  }
+
+  .contact-section h2{
+    font-size:42px;
+    line-height:1.1;
+  }
+
+  .contact-section a{
+    font-size:18px;
+    word-break:break-word;
+  }
+}
+
+@media (max-width: 480px){
+
+  body{
+    padding-top:86px;
+  }
+
+  header{
+    height:86px;
+    padding:0 14px;
+  }
+
+  .logo{
+    display:flex !important;
+    align-items:center;
+    flex-shrink:0;
+    margin:0 !important;
+    transform:translateX(-14px);
+  }
+
+  .logo img{
+    width:120px !important;
+    height:auto !important;
+    display:block !important;
+    object-fit:contain;
+  }
+
+  nav{
+    display:flex !important;
+    gap:9px;
+    padding-top:0;
+    margin-left:auto;
+    transform:translateX(-10px);
+  }
+
+  nav a{
+    font-size:10px;
+  }
+
+  .hero{
+    padding:90px 18px 70px;
+  }
+
+  .hero-content h1{
+    font-size:52px;
+  }
+
+  .hero-content p{
+    font-size:10px;
+    letter-spacing:2px;
+  }
+
+  .hero-description{
+    font-size:15px;
+    line-height:1.7;
+  }
+
+  .projects-section,
+  .about-section,
+  .services-section,
+  .contact-section{
+    padding:70px 18px;
+  }
+
+  .section-heading h2{
+    font-size:32px;
+  }
+
+  .about-section h2{
+    font-size:30px;
+  }
+
+  .contact-section h2{
+    font-size:34px;
+  }
+}
