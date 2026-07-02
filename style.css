@@ -562,3 +562,16 @@ nav a{
     font-size:34px;
   }
 }
+.project-meta{
+  margin-top:10px;
+  font-size:14px;
+  color:var(--accent) !important;
+}
+
+.project-summary{
+  max-width:520px;
+  margin-top:14px;
+  font-size:15px;
+  line-height:1.7;
+  color:var(--secondary);
+}
