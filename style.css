@@ -772,3 +772,268 @@ nav a{
     height:58vh;
   }
 }
+/* ==========================================
+   STUDIO PAGE
+========================================== */
+
+.studio-page-hero{
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  padding:220px 55px 120px;
+}
+
+.studio-hero-content{
+  max-width:1050px;
+}
+
+.studio-hero-content > p{
+  font-size:13px;
+  letter-spacing:2px;
+  text-transform:uppercase;
+  color:var(--secondary);
+  margin-bottom:35px;
+}
+
+.studio-hero-content h1{
+  font-size:clamp(54px, 8vw, 120px);
+  line-height:.95;
+  font-weight:400;
+  letter-spacing:-4px;
+  margin-bottom:40px;
+}
+
+.studio-hero-description{
+  max-width:560px;
+  font-size:18px;
+  line-height:1.7;
+  color:var(--secondary);
+}
+
+/* Story */
+
+.studio-story-section{
+  padding:140px 55px;
+  display:grid;
+  grid-template-columns:1fr 2fr;
+  gap:80px;
+  border-top:1px solid rgba(0,0,0,.12);
+}
+
+.studio-story-text h2{
+  font-size:clamp(34px, 4vw, 64px);
+  line-height:1.1;
+  font-weight:400;
+  letter-spacing:-2px;
+  margin-bottom:50px;
+}
+
+.studio-story-text p{
+  max-width:720px;
+  font-size:18px;
+  line-height:1.8;
+  color:var(--secondary);
+  margin-bottom:28px;
+}
+
+/* Philosophy */
+
+.studio-philosophy-section{
+  padding:140px 55px;
+  border-top:1px solid rgba(0,0,0,.12);
+}
+
+.philosophy-grid{
+  display:grid;
+  grid-template-columns:repeat(4, 1fr);
+  gap:28px;
+  margin-top:70px;
+}
+
+.philosophy-item{
+  border-top:1px solid rgba(0,0,0,.25);
+  padding-top:28px;
+}
+
+.philosophy-item span,
+.approach-item span{
+  display:block;
+  font-size:13px;
+  color:var(--secondary);
+  margin-bottom:35px;
+}
+
+.philosophy-item h3,
+.approach-item h3{
+  font-size:28px;
+  font-weight:400;
+  margin-bottom:20px;
+}
+
+.philosophy-item p,
+.approach-item p{
+  font-size:16px;
+  line-height:1.7;
+  color:var(--secondary);
+}
+
+/* Approach */
+
+.studio-approach-section{
+  padding:140px 55px;
+  border-top:1px solid rgba(0,0,0,.12);
+}
+
+.approach-list{
+  margin-top:70px;
+}
+
+.approach-item{
+  display:grid;
+  grid-template-columns:80px 1fr 2fr;
+  gap:40px;
+  padding:38px 0;
+  border-top:1px solid rgba(0,0,0,.12);
+}
+
+.approach-item:last-child{
+  border-bottom:1px solid rgba(0,0,0,.12);
+}
+
+/* CTA */
+
+.studio-cta-section{
+  padding:160px 55px;
+  text-align:center;
+  border-top:1px solid rgba(0,0,0,.12);
+}
+
+.studio-cta-section p{
+  font-size:13px;
+  letter-spacing:2px;
+  text-transform:uppercase;
+  color:var(--secondary);
+  margin-bottom:30px;
+}
+
+.studio-cta-section h2{
+  font-size:clamp(42px, 6vw, 90px);
+  line-height:1;
+  font-weight:400;
+  letter-spacing:-3px;
+  margin-bottom:50px;
+}
+
+.studio-cta-section a{
+  display:inline-block;
+  color:var(--text);
+  text-decoration:none;
+  border-bottom:1px solid var(--text);
+  padding-bottom:6px;
+  font-size:16px;
+}
+
+/* Responsive */
+
+@media (max-width:900px){
+
+  .studio-page-hero{
+    padding:180px 28px 90px;
+  }
+
+  .studio-hero-content h1{
+    letter-spacing:-2px;
+  }
+
+  .studio-story-section{
+    grid-template-columns:1fr;
+    gap:50px;
+    padding:100px 28px;
+  }
+
+  .studio-philosophy-section,
+  .studio-approach-section,
+  .studio-cta-section{
+    padding:100px 28px;
+  }
+
+  .philosophy-grid{
+    grid-template-columns:repeat(2, 1fr);
+    gap:45px 28px;
+  }
+
+  .approach-item{
+    grid-template-columns:1fr;
+    gap:18px;
+  }
+
+}
+
+@media (max-width:600px){
+
+  .studio-page-hero{
+    min-height:auto;
+    padding:160px 22px 80px;
+  }
+
+  .studio-hero-description,
+  .studio-story-text p{
+    font-size:16px;
+  }
+
+  .studio-story-section,
+  .studio-philosophy-section,
+  .studio-approach-section,
+  .studio-cta-section{
+    padding:80px 22px;
+  }
+
+  .philosophy-grid{
+    grid-template-columns:1fr;
+  }
+
+  .studio-cta-section{
+    text-align:left;
+  }
+
+}.studio-approach-section{
+  padding:140px 55px;
+  display:grid;
+  grid-template-columns:1fr 2fr;
+  gap:80px;
+  border-top:1px solid rgba(0,0,0,.12);
+}
+
+.studio-approach-text p{
+  max-width:720px;
+  font-size:18px;
+  line-height:1.8;
+  color:var(--secondary);
+  margin-bottom:28px;
+}
+
+.studio-approach-text p:last-child{
+  margin-bottom:0;
+}
+
+@media (max-width:900px){
+
+  .studio-approach-section{
+    grid-template-columns:1fr;
+    gap:50px;
+    padding:100px 28px;
+  }
+
+}
+
+@media (max-width:600px){
+
+  .studio-approach-section{
+    padding:80px 22px;
+  }
+
+  .studio-approach-text p{
+    font-size:16px;
+  }
+
+}
