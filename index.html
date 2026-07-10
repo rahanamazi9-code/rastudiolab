@@ -1,178 +1,694 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ra. studio</title>
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" sizes="512x512" href="images/favicon.png">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  >
+
+  <meta
+    name="description"
+    content="ra. studio is an architecture, interior and product design studio creating calm, functional and timeless spaces."
+  >
+
+  <title>ra. studio — Architecture &amp; Interior Design</title>
+
+  <link
+    rel="icon"
+    type="image/png"
+    href="images/favicon.png"
+  >
 
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="home-page">
 
-<header>
-  <div class="logo">
-    <img src="images/logo.png" alt="ra. studio logo">
-  </div>
+  <header>
 
-  <nav>
-    <a href="studio.html">Studio</a>
-    <a href="#projects">Services</a>
-    <a href="#contact">Contact</a>
-  </nav>
-</header>
-
-<section class="hero">
-  <div class="hero-content">
-    <p>Architecture • Interior Design • Product Design</p>
-
-    <h1>Design is<br>everything.</h1>
-
-    <p class="hero-description">
-      Architecture, interior design and bespoke spaces crafted
-      with simplicity, precision and timeless aesthetics.
-    </p>
-
-    <div class="hero-links">
-      <a href="#projects">View Projects</a>
-      <a href="#studio">Our Studio</a>
-    </div>
-  </div>
-</section>
-
-<section class="about-section" id="studio">
-  <p>About ra. studio</p>
-  <h2>
-    We create calm, functional and timeless spaces
-    through architecture, interior design and detail-led execution.
-  </h2>
-</section>
-
-<section class="services-section" id="projects">
-  <div class="section-heading">
-    <p>Projects</p>
-  </div>
-
-  <div class="services-list project-categories">
-
-    <!-- Architecture -->
-
-    <div class="service-item project-category">
-      <span>01</span>
-
-      <div>
-        <h3>Architecture</h3>
-        <a href="./architecture.html" class="view-more">View more projects</a>
-      </div>
-
-      <div class="category-projects-preview">
-
-        <article>
-          <a href="projects/ravaghvilla.html">
-            <img src="images/ravaghvilla-01.jpg" alt="Ravagh Villa">
-            <h4>Ravagh Villa</h4>
-            <p>Residential Architecture</p>
-          </a>
-        </article>
-
-        <article>
-          <a href="projects/villaa63.html">
-            <img src="images/villaa63-01.jpg" alt="Villa A63">
-            <h4>Villa A63</h4>
-            <p>Residential Architecture</p>
-          </a>
-        </article>
-
-      </div>
-    </div>
-
-    <!-- Interior -->
-
-    <div class="service-item project-category">
-      <span>02</span>
-
-      <div>
-        <h3>Interior Design</h3>
-        <a href="./interior.html" class="view-more">View more projects</a>
-      </div>
-
-      <div class="category-projects-preview">
-
-        <article>
-          <a href="projects/cutoncafebakery.html">
-            <img src="images/cutoncafebakery-01.jpg" alt="Cut-On Cafe Bakery">
-            <h4>Cut-On Cafe Bakery</h4>
-            <p>Commercial Interior</p>
-          </a>
-        </article>
-
-        <article>
-          <a href="projects/dayhouse.html">
-            <img src="images/khanehyeday-01.jpg" alt="Day House">
-            <h4>Day House</h4>
-            <p>Residential Interior</p>
-          </a>
-        </article>
-
-      </div>
-    </div>
-
-    <!-- Product -->
-
-    <div class="service-item project-category">
-      <span>03</span>
-
-      <div>
-        <h3>Product Design</h3>
-      </div>
-
-      <div class="category-projects-preview">
-
-        <article>
-          <img src="images/product-01.jpg" alt="Lighting no.29">
-          <h4>Lighting no.29</h4>
-          <p>Product Design</p>
-        </article>
-
-        <article>
-          <img src="images/product-02.jpg" alt="Gereh Side Table">
-          <h4>Gereh Side Table</h4>
-          <p>Product Design</p>
-        </article>
-
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<section class="contact-section" id="contact">
-  <p>Contact</p>
-  <h2>Let’s design something together.</h2>
-
-  <div class="contact-links">
-
-    <a href="mailto:ra.architectureteam@gmail.com">
-      ra.architectureteam@gmail.com
+    <a
+      class="logo"
+      href="index.html"
+      aria-label="ra. studio home"
+    >
+      <img
+        src="images/logo.png"
+        alt="ra. studio"
+      >
     </a>
 
-    <a href="https://wa.me/447599902318" target="_blank">
-      WhatsApp: +447599902318
-    </a>
+    <nav aria-label="Main navigation">
+      <a href="studio.html">Studio</a>
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
 
-    <a href="tel:+989017060841">
-      Tel: +98 901 706 0841
-    </a>
+  </header>
 
-    <a href="https://instagram.com/rastudiolab" target="_blank">
-      Instagram: rastudiolab
-    </a>
+  <main>
 
-  </div>
-</section>
+    <!-- HERO -->
+
+    <section
+      class="hero-slideshow"
+      aria-label="Selected projects"
+    >
+
+      <div
+        class="hero-slides"
+        aria-live="off"
+      ></div>
+
+      <div
+        class="hero-overlay"
+        aria-hidden="true"
+      ></div>
+
+      <div class="hero-content">
+
+        <p class="hero-eyebrow">
+          Architecture · Interior Design · Product Design
+        </p>
+
+        <h1>
+          Design is<br>
+          everything.
+        </h1>
+
+        <p class="hero-description">
+          Architecture, interior design and bespoke spaces crafted
+          with simplicity, precision and timeless aesthetics.
+        </p>
+
+        <div class="hero-links">
+          <a href="#projects">View projects</a>
+          <a href="studio.html">Our studio</a>
+        </div>
+
+      </div>
+
+      <div
+        class="hero-project-info"
+        aria-live="polite"
+      >
+
+        <span class="hero-project-number">
+          01 / 06
+        </span>
+
+        <div>
+          <p class="hero-project-name"></p>
+          <p class="hero-project-category"></p>
+        </div>
+
+      </div>
+
+      <div
+        class="hero-dots"
+        aria-label="Slideshow navigation"
+      ></div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+
+    <section
+      class="about-section"
+      id="about"
+      aria-labelledby="about-title"
+    >
+
+      <p>About ra. studio</p>
+
+      <h2 id="about-title">
+        We create calm, functional and timeless spaces
+        through architecture, interior design and
+        detail-led execution.
+      </h2>
+
+    </section>
+
+
+    <!-- PROJECTS -->
+
+    <section
+      class="services-section"
+      id="projects"
+      aria-labelledby="projects-title"
+    >
+
+      <div class="section-heading">
+        <p id="projects-title">Selected projects</p>
+      </div>
+
+      <div class="services-list project-categories">
+
+
+        <!-- ARCHITECTURE -->
+
+        <div class="project-category">
+
+          <span aria-hidden="true">01</span>
+
+          <div class="category-heading">
+
+            <h3>Architecture</h3>
+
+            <a
+              class="view-more"
+              href="architecture.html"
+            >
+              View all projects
+            </a>
+
+          </div>
+
+          <div class="category-projects-preview">
+
+            <article>
+
+              <a href="projects/ravaghvilla.html">
+
+                <img
+                  src="images/ravaghvilla-01.jpg"
+                  alt="Ravagh Villa"
+                  loading="lazy"
+                  width="1200"
+                  height="900"
+                >
+
+                <h4>Ravagh Villa</h4>
+
+                <p>Residential Architecture</p>
+
+              </a>
+
+            </article>
+
+            <article>
+
+              <a href="projects/villaa63.html">
+
+                <img
+                  src="images/villaa63-01.jpg"
+                  alt="Villa A63"
+                  loading="lazy"
+                  width="1200"
+                  height="900"
+                >
+
+                <h4>Villa A63</h4>
+
+                <p>Residential Architecture</p>
+
+              </a>
+
+            </article>
+
+          </div>
+
+        </div>
+
+
+        <!-- INTERIOR DESIGN -->
+
+        <div class="project-category">
+
+          <span aria-hidden="true">02</span>
+
+          <div class="category-heading">
+
+            <h3>Interior Design</h3>
+
+            <a
+              class="view-more"
+              href="interior.html"
+            >
+              View all projects
+            </a>
+
+          </div>
+
+          <div class="category-projects-preview">
+
+            <article>
+
+              <a href="projects/cutoncafebakery.html">
+
+                <img
+                  src="images/cutoncafebakery-01.jpg"
+                  alt="Cut-On Cafe Bakery"
+                  loading="lazy"
+                  width="1200"
+                  height="900"
+                >
+
+                <h4>Cut-On Cafe Bakery</h4>
+
+                <p>Commercial Interior</p>
+
+              </a>
+
+            </article>
+
+            <article>
+
+              <a href="projects/dayhouse.html">
+
+                <img
+                  src="images/khanehyeday-01.jpg"
+                  alt="Day House"
+                  loading="lazy"
+                  width="1200"
+                  height="900"
+                >
+
+                <h4>Day House</h4>
+
+                <p>Residential Interior</p>
+
+              </a>
+
+            </article>
+
+          </div>
+
+        </div>
+
+
+        <!-- PRODUCT DESIGN -->
+
+        <div class="project-category">
+
+          <span aria-hidden="true">03</span>
+
+          <div class="category-heading">
+            <h3>Product Design</h3>
+          </div>
+
+          <div class="category-projects-preview">
+
+            <article>
+
+              <img
+                src="images/product-01.jpg"
+                alt="Lighting no.29"
+                loading="lazy"
+                width="1200"
+                height="900"
+              >
+
+              <h4>Lighting no.29</h4>
+
+              <p>Product Design</p>
+
+            </article>
+
+            <article>
+
+              <img
+                src="images/product-02.jpg"
+                alt="Gereh Side Table"
+                loading="lazy"
+                width="1200"
+                height="900"
+              >
+
+              <h4>Gereh Side Table</h4>
+
+              <p>Product Design</p>
+
+            </article>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+
+    <section
+      class="contact-section"
+      id="contact"
+      aria-labelledby="contact-title"
+    >
+
+      <p>Contact</p>
+
+      <h2 id="contact-title">
+        Let’s design something together.
+      </h2>
+
+      <div class="contact-links">
+
+        <a href="mailto:ra.architectureteam@gmail.com">
+          ra.architectureteam@gmail.com
+        </a>
+
+        <a
+          href="https://wa.me/447599902318"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          WhatsApp: +44 7599 902318
+        </a>
+
+        <a href="tel:+989017060841">
+          Tel: +98 901 706 0841
+        </a>
+
+        <a
+          href="https://instagram.com/rastudiolab"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Instagram: @rastudiolab
+        </a>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- SLIDESHOW -->
+
+  <script>
+
+    (() => {
+
+      const projects = [
+
+        {
+          name: "Ravagh Villa",
+          category: "Architecture",
+          image: "images/ravaghvilla-01.jpg",
+          link: "projects/ravaghvilla.html"
+        },
+
+        {
+          name: "Villa A63",
+          category: "Architecture",
+          image: "images/villaa63-01.jpg",
+          link: "projects/villaa63.html"
+        },
+
+        {
+          name: "Cut-On Cafe Bakery",
+          category: "Interior Design",
+          image: "images/cutoncafebakery-01.jpg",
+          link: "projects/cutoncafebakery.html"
+        },
+
+        {
+          name: "Day House",
+          category: "Interior Design",
+          image: "images/khanehyeday-01.jpg",
+          link: "projects/dayhouse.html"
+        },
+
+        {
+          name: "Lighting no.29",
+          category: "Product Design",
+          image: "images/product-01.jpg",
+          link: ""
+        },
+
+        {
+          name: "Gereh Side Table",
+          category: "Product Design",
+          image: "images/product-02.jpg",
+          link: ""
+        }
+
+      ];
+
+
+      const hero =
+        document.querySelector(".hero-slideshow");
+
+      const slidesRoot =
+        hero?.querySelector(".hero-slides");
+
+      const dotsRoot =
+        hero?.querySelector(".hero-dots");
+
+      const name =
+        hero?.querySelector(".hero-project-name");
+
+      const category =
+        hero?.querySelector(".hero-project-category");
+
+      const number =
+        hero?.querySelector(".hero-project-number");
+
+
+      if (
+        !hero ||
+        !slidesRoot ||
+        !dotsRoot ||
+        !name ||
+        !category ||
+        !number
+      ) {
+        return;
+      }
+
+
+      let current = 0;
+      let timer;
+
+
+      const reduceMotion =
+        window.matchMedia(
+          "(prefers-reduced-motion: reduce)"
+        ).matches;
+
+
+      projects.forEach((project, index) => {
+
+        const slide =
+          document.createElement(
+            project.link ? "a" : "div"
+          );
+
+
+        slide.className =
+          `hero-slide${index === 0 ? " active" : ""}`;
+
+
+        slide.style.backgroundImage =
+          `url("${project.image}")`;
+
+
+        slide.dataset.name =
+          project.name;
+
+
+        slide.dataset.category =
+          project.category;
+
+
+        if (project.link) {
+
+          slide.href =
+            project.link;
+
+
+          slide.setAttribute(
+            "aria-label",
+            `View ${project.name}`
+          );
+
+        } else {
+
+          slide.setAttribute(
+            "aria-label",
+            project.name
+          );
+
+
+          slide.setAttribute(
+            "aria-disabled",
+            "true"
+          );
+
+        }
+
+
+        const dot =
+          document.createElement("button");
+
+
+        dot.type =
+          "button";
+
+
+        dot.className =
+          `hero-dot${index === 0 ? " active" : ""}`;
+
+
+        dot.setAttribute(
+          "aria-label",
+          `Show ${project.name}`
+        );
+
+
+        dot.addEventListener(
+          "click",
+          () => {
+
+            show(index);
+            start();
+
+          }
+        );
+
+
+        slidesRoot.append(slide);
+        dotsRoot.append(dot);
+
+      });
+
+
+      const slides =
+        [...slidesRoot.children];
+
+
+      const dots =
+        [...dotsRoot.children];
+
+
+      function show(index) {
+
+        slides[current].classList.remove(
+          "active"
+        );
+
+
+        dots[current].classList.remove(
+          "active"
+        );
+
+
+        current =
+          index;
+
+
+        slides[current].classList.add(
+          "active"
+        );
+
+
+        dots[current].classList.add(
+          "active"
+        );
+
+
+        name.textContent =
+          projects[current].name;
+
+
+        category.textContent =
+          projects[current].category;
+
+
+        const currentNumber =
+          String(current + 1).padStart(2, "0");
+
+
+        const totalNumber =
+          String(projects.length).padStart(2, "0");
+
+
+        number.textContent =
+          `${currentNumber} / ${totalNumber}`;
+
+      }
+
+
+      function stop() {
+
+        window.clearInterval(timer);
+
+      }
+
+
+      function start() {
+
+        stop();
+
+
+        if (
+          !reduceMotion &&
+          projects.length > 1 &&
+          !document.hidden
+        ) {
+
+          timer =
+            window.setInterval(
+              () => {
+
+                show(
+                  (current + 1) %
+                  projects.length
+                );
+
+              },
+              5500
+            );
+
+        }
+
+      }
+
+
+      hero.addEventListener(
+        "mouseenter",
+        stop
+      );
+
+
+      hero.addEventListener(
+        "mouseleave",
+        start
+      );
+
+
+      hero.addEventListener(
+        "focusin",
+        stop
+      );
+
+
+      hero.addEventListener(
+        "focusout",
+        start
+      );
+
+
+      document.addEventListener(
+        "visibilitychange",
+        start
+      );
+
+
+      show(0);
+      start();
+
+    })();
+
+  </script>
 
 </body>
 </html>
