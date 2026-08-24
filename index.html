@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -9,9 +10,104 @@
 
   <link rel="icon" type="image/png" href="images/favicon.png">
   <link rel="stylesheet" href="style.css">
+
+  <style>
+    /* =========================================
+       VIEW ALL PROJECTS BUTTON
+       ========================================= */
+
+    .category-heading {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+      width: 100%;
+    }
+
+    .category-heading h3 {
+      margin: 0;
+    }
+
+    .category-heading .view-more {
+      display: inline-flex;
+      align-items: center;
+      justify-content: space-between;
+
+      width: 280px;
+      padding: 20px 24px;
+
+      border: 1px solid currentColor;
+
+      color: inherit;
+      background: transparent;
+
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 1;
+      letter-spacing: 0.03em;
+
+      text-decoration: none;
+      white-space: nowrap;
+
+      box-sizing: border-box;
+
+      transition:
+        background-color 0.25s ease,
+        color 0.25s ease;
+    }
+
+    .category-heading .view-more-arrow {
+      font-size: 19px;
+      line-height: 1;
+
+      transition: transform 0.25s ease;
+    }
+
+    .category-heading .view-more:hover {
+      background: #111;
+      color: #fff;
+    }
+
+    .category-heading .view-more:hover .view-more-arrow {
+      transform: translate(3px, -3px);
+    }
+
+    /* Tablet */
+    @media (max-width: 900px) {
+      .category-heading .view-more {
+        width: 220px;
+        padding: 17px 20px;
+        font-size: 13px;
+      }
+    }
+
+    /* Mobile */
+    @media (max-width: 600px) {
+      .category-heading {
+        align-items: center;
+        gap: 15px;
+      }
+
+      .category-heading .view-more {
+        width: auto;
+        min-width: 155px;
+
+        padding: 14px 15px;
+
+        font-size: 11px;
+        letter-spacing: 0.02em;
+      }
+
+      .category-heading .view-more-arrow {
+        margin-left: 15px;
+        font-size: 15px;
+      }
+    }
+  </style>
 </head>
 
 <body class="home-page">
+
   <header>
     <a class="logo" href="index.html" aria-label="ra. studio home">
       <img src="images/logo.png" alt="ra. studio">
@@ -25,15 +121,28 @@
     </nav>
   </header>
 
+
   <main>
+
+    <!-- =========================================
+         HERO
+         ========================================= -->
+
     <section class="hero-slideshow" aria-label="Selected projects">
+
       <div class="hero-slides" aria-live="off"></div>
       <div class="hero-overlay" aria-hidden="true"></div>
 
       <div class="hero-content">
-        <p class="hero-eyebrow">Architecture · Interior Design · Product Design</p>
 
-        <h1>Design is<br>everything.</h1>
+        <p class="hero-eyebrow">
+          Architecture · Interior Design · Product Design
+        </p>
+
+        <h1>
+          Design is<br>
+          everything.
+        </h1>
 
         <p class="hero-description">
           Architecture, interior design and bespoke spaces crafted with
@@ -44,356 +153,1180 @@
           <a href="#projects">View projects</a>
           <a href="studio.html">Our studio</a>
         </div>
+
       </div>
 
+
       <div class="hero-project-info" aria-live="polite">
-        <span class="hero-project-number">01 / 06</span>
+
+        <span class="hero-project-number">
+          01 / 06
+        </span>
+
         <div>
           <p class="hero-project-name"></p>
           <p class="hero-project-category"></p>
         </div>
+
       </div>
 
-      <div class="hero-dots" aria-label="Slideshow navigation"></div>
+
+      <div
+        class="hero-dots"
+        aria-label="Slideshow navigation">
+      </div>
+
     </section>
 
-    <section class="about-section" id="about" aria-labelledby="about-title">
+
+
+    <!-- =========================================
+         ABOUT
+         ========================================= -->
+
+    <section
+      class="about-section"
+      id="about"
+      aria-labelledby="about-title">
+
       <p>About ra. studio</p>
+
       <h2 id="about-title">
         We create calm, functional and timeless spaces through architecture,
         interior design and detail-led execution.
       </h2>
+
     </section>
 
-    <section class="services-section" id="projects" aria-labelledby="projects-title">
+
+
+    <!-- =========================================
+         SELECTED PROJECTS
+         ========================================= -->
+
+    <section
+      class="services-section"
+      id="projects"
+      aria-labelledby="projects-title">
+
       <div class="section-heading">
-        <p id="projects-title">Selected projects</p>
+        <p id="projects-title">
+          Selected projects
+        </p>
       </div>
+
 
       <div class="services-list project-categories">
+
+
+        <!-- ARCHITECTURE -->
+
         <div class="project-category">
-          <span aria-hidden="true">01</span>
+
+          <span aria-hidden="true">
+            01
+          </span>
+
 
           <div class="category-heading">
-            <h3>Architecture</h3>
-            <a class="view-more" href="architecture.html">View all projects</a>
+
+            <h3>
+              Architecture
+            </h3>
+
+            <a
+              class="view-more"
+              href="architecture.html">
+
+              <span>
+                View all projects
+              </span>
+
+              <span
+                class="view-more-arrow"
+                aria-hidden="true">
+                ↗
+              </span>
+
+            </a>
+
           </div>
 
+
           <div class="category-projects-preview">
+
             <article>
+
               <a href="projects/ravaghvilla.html">
-                <img src="images/ravaghvilla-01.png" alt="Ravagh Villa" loading="lazy" width="1200" height="900">
-                <h4>Ravagh Villa</h4>
-                <p>Residential Architecture</p>
+
+                <img
+                  src="images/ravaghvilla-01.png"
+                  alt="Ravagh Villa"
+                  loading="lazy"
+                  width="1200"
+                  height="900">
+
+                <h4>
+                  Ravagh Villa
+                </h4>
+
+                <p>
+                  Residential Architecture
+                </p>
+
               </a>
+
             </article>
 
+
             <article>
+
               <a href="projects/villaa63.html">
-                <img src="images/villaa63-01.jpg" alt="Villa A63" loading="lazy" width="1200" height="900">
-                <h4>Villa A63</h4>
-                <p>Residential Architecture</p>
+
+                <img
+                  src="images/villaa63-01.jpg"
+                  alt="Villa A63"
+                  loading="lazy"
+                  width="1200"
+                  height="900">
+
+                <h4>
+                  Villa A63
+                </h4>
+
+                <p>
+                  Residential Architecture
+                </p>
+
               </a>
+
             </article>
+
           </div>
+
         </div>
 
+
+
+        <!-- INTERIOR DESIGN -->
+
         <div class="project-category">
-          <span aria-hidden="true">02</span>
+
+          <span aria-hidden="true">
+            02
+          </span>
+
 
           <div class="category-heading">
-            <h3>Interior Design</h3>
-            <a class="view-more" href="interior.html">View all projects</a>
+
+            <h3>
+              Interior Design
+            </h3>
+
+            <a
+              class="view-more"
+              href="interior.html">
+
+              <span>
+                View all projects
+              </span>
+
+              <span
+                class="view-more-arrow"
+                aria-hidden="true">
+                ↗
+              </span>
+
+            </a>
+
           </div>
 
+
           <div class="category-projects-preview">
+
             <article>
+
               <a href="projects/cutoncafebakery.html">
-                <img src="images/cutoncafebakery-01.jpg" alt="Cut-On Cafe Bakery" loading="lazy" width="1200" height="900">
-                <h4>Cut-On Cafe Bakery</h4>
-                <p>Commercial Interior</p>
+
+                <img
+                  src="images/cutoncafebakery-01.jpg"
+                  alt="Cut-On Cafe Bakery"
+                  loading="lazy"
+                  width="1200"
+                  height="900">
+
+                <h4>
+                  Cut-On Cafe Bakery
+                </h4>
+
+                <p>
+                  Commercial Interior
+                </p>
+
               </a>
+
             </article>
 
+
             <article>
+
               <a href="projects/dayhouse.html">
-                <img src="images/khanehyeday-01.jpg" alt="Day House" loading="lazy" width="1200" height="900">
-                <h4>Day House</h4>
-                <p>Residential Interior</p>
+
+                <img
+                  src="images/khanehyeday-01.jpg"
+                  alt="Day House"
+                  loading="lazy"
+                  width="1200"
+                  height="900">
+
+                <h4>
+                  Day House
+                </h4>
+
+                <p>
+                  Residential Interior
+                </p>
+
               </a>
+
             </article>
+
           </div>
+
         </div>
+
+
+
+        <!-- PRODUCT DESIGN -->
 
         <div class="project-category">
-          <span aria-hidden="true">03</span>
+
+          <span aria-hidden="true">
+            03
+          </span>
+
 
           <div class="category-heading">
-            <h3>Product Design</h3>
+
+            <h3>
+              Product Design
+            </h3>
+
           </div>
+
 
           <div class="category-projects-preview">
-            <article>
-              <img src="images/product-01.jpg" alt="Lighting no.29" loading="lazy" width="1200" height="900">
-              <h4>Lighting no.29</h4>
-              <p>Product Design</p>
-            </article>
 
             <article>
-              <img src="images/product-02.jpg" alt="Gereh Side Table" loading="lazy" width="1200" height="900">
-              <h4>Gereh Side Table</h4>
-              <p>Product Design</p>
+
+              <img
+                src="images/product-01.jpg"
+                alt="Lighting no.29"
+                loading="lazy"
+                width="1200"
+                height="900">
+
+              <h4>
+                Lighting no.29
+              </h4>
+
+              <p>
+                Product Design
+              </p>
+
             </article>
+
+
+            <article>
+
+              <img
+                src="images/product-02.jpg"
+                alt="Gereh Side Table"
+                loading="lazy"
+                width="1200"
+                height="900">
+
+              <h4>
+                Gereh Side Table
+              </h4>
+
+              <p>
+                Product Design
+              </p>
+
+            </article>
+
           </div>
+
         </div>
+
       </div>
+
     </section>
 
-    <section class="contact-section" id="contact" aria-labelledby="contact-title">
-      <p>Contact</p>
-      <h2 id="contact-title">Let’s design something together.</h2>
+
+
+    <!-- =========================================
+         CONTACT
+         ========================================= -->
+
+    <section
+      class="contact-section"
+      id="contact"
+      aria-labelledby="contact-title">
+
+      <p>
+        Contact
+      </p>
+
+      <h2 id="contact-title">
+        Let’s design something together.
+      </h2>
+
 
       <div class="contact-links">
-        <a href="mailto:ra.architectureteam@gmail.com">ra.architectureteam@gmail.com</a>
-        <a href="https://wa.me/447599902318" target="_blank" rel="noopener noreferrer">WhatsApp: +44 7599 902318</a>
-        <a href="tel:+989017060841">Tel: +98 901 706 0841</a>
-        <a href="https://instagram.com/rastudiolab" target="_blank" rel="noopener noreferrer">Instagram: @rastudiolab</a>
-        <a href="https://www.linkedin.com/in/rastudiolab/" target="_blank" rel="noopener noreferrer">Linkedin: rastudiolab</a>
+
+        <a href="mailto:ra.architectureteam@gmail.com">
+          ra.architectureteam@gmail.com
+        </a>
+
+        <a
+          href="https://wa.me/447599902318"
+          target="_blank"
+          rel="noopener noreferrer">
+          WhatsApp: +44 7599 902318
+        </a>
+
+        <a href="tel:+989017060841">
+          Tel: +98 901 706 0841
+        </a>
+
+        <a
+          href="https://instagram.com/rastudiolab"
+          target="_blank"
+          rel="noopener noreferrer">
+          Instagram: @rastudiolab
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/rastudiolab/"
+          target="_blank"
+          rel="noopener noreferrer">
+          Linkedin: rastudiolab
+        </a>
+
       </div>
+
     </section>
+
   </main>
+
+
+
+  <!-- =========================================
+       HERO SLIDESHOW JAVASCRIPT
+       ========================================= -->
 
   <script>
     (() => {
+
       const fallbackProjects = [
-        { name: "Ravagh Villa", category: "Architecture", image: "images/ravaghvilla-01.png", link: "projects/ravaghvilla.html" },
-        { name: "Villa A63", category: "Architecture", image: "images/villaa63-01.jpg", link: "projects/villaa63.html" },
-        { name: "Cut-On Cafe Bakery", category: "Interior Design", image: "images/cutoncafebakery-01.jpg", link: "projects/cutoncafebakery.html" },
-        { name: "Day House", category: "Interior Design", image: "images/khanehyeday-01.jpg", link: "projects/dayhouse.html" }
+
+        {
+          name: "Ravagh Villa",
+          category: "Architecture",
+          image: "images/ravaghvilla-01.png",
+          link: "projects/ravaghvilla.html"
+        },
+
+        {
+          name: "Villa A63",
+          category: "Architecture",
+          image: "images/villaa63-01.jpg",
+          link: "projects/villaa63.html"
+        },
+
+        {
+          name: "Cut-On Cafe Bakery",
+          category: "Interior Design",
+          image: "images/cutoncafebakery-01.jpg",
+          link: "projects/cutoncafebakery.html"
+        },
+
+        {
+          name: "Day House",
+          category: "Interior Design",
+          image: "images/khanehyeday-01.jpg",
+          link: "projects/dayhouse.html"
+        }
+
       ];
+
 
       const productProjects = [
-        { name: "Lighting no.29", category: "Product Design", image: "images/product-01.jpg", link: "" },
-        { name: "Gereh Side Table", category: "Product Design", image: "images/product-02.jpg", link: "" }
+
+        {
+          name: "Lighting no.29",
+          category: "Product Design",
+          image: "images/product-01.jpg",
+          link: ""
+        },
+
+        {
+          name: "Gereh Side Table",
+          category: "Product Design",
+          image: "images/product-02.jpg",
+          link: ""
+        }
+
       ];
 
-      const hero = document.querySelector(".hero-slideshow");
-      const slidesRoot = hero?.querySelector(".hero-slides");
-      const dotsRoot = hero?.querySelector(".hero-dots");
-      const name = hero?.querySelector(".hero-project-name");
-      const category = hero?.querySelector(".hero-project-category");
-      const number = hero?.querySelector(".hero-project-number");
 
-      if (!hero || !slidesRoot || !dotsRoot || !name || !category || !number) return;
+      const hero =
+        document.querySelector(".hero-slideshow");
+
+      const slidesRoot =
+        hero?.querySelector(".hero-slides");
+
+      const dotsRoot =
+        hero?.querySelector(".hero-dots");
+
+      const name =
+        hero?.querySelector(".hero-project-name");
+
+      const category =
+        hero?.querySelector(".hero-project-category");
+
+      const number =
+        hero?.querySelector(".hero-project-number");
+
+
+      if (
+        !hero ||
+        !slidesRoot ||
+        !dotsRoot ||
+        !name ||
+        !category ||
+        !number
+      ) {
+        return;
+      }
+
 
       let projects = [];
       let slides = [];
       let dots = [];
+
       let current = 0;
       let timer;
+
       let touchStartX = 0;
       let touchDistanceX = 0;
+
       let wheelLocked = false;
-      const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+
+      const reduceMotion =
+        window.matchMedia(
+          "(prefers-reduced-motion: reduce)"
+        ).matches;
+
+
 
       function resolvePath(path, sourcePage) {
-        if (!path) return "";
+
+        if (!path) {
+          return "";
+        }
+
         try {
-          return new URL(path, new URL(sourcePage, window.location.href)).href;
+
+          return new URL(
+            path,
+            new URL(
+              sourcePage,
+              window.location.href
+            )
+          ).href;
+
         } catch {
+
           return path;
+
         }
+
       }
 
-      async function loadCategory(pageUrl, categoryName) {
+
+
+      async function loadCategory(
+        pageUrl,
+        categoryName
+      ) {
+
         try {
-          const response = await fetch(pageUrl, { cache: "no-store" });
-          if (!response.ok) throw new Error(`Could not load ${pageUrl}`);
 
-          const page = new DOMParser().parseFromString(await response.text(), "text/html");
-          const cards = page.querySelectorAll(".portfolio-card a[href], .portfolio-grid article a[href]");
+          const response =
+            await fetch(
+              pageUrl,
+              {
+                cache: "no-store"
+              }
+            );
 
-          return [...cards].flatMap((card) => {
-            const image = card.querySelector("img");
-            const imagePath = image?.getAttribute("src");
-            const projectPath = card.getAttribute("href");
-            if (!imagePath || !projectPath) return [];
 
-            const heading = card.querySelector("h1, h2, h3, h4");
-            return [{
-              name: heading?.textContent.trim() || image.alt.trim() || "Project",
-              category: categoryName,
-              image: resolvePath(imagePath, pageUrl),
-              link: resolvePath(projectPath, pageUrl)
-            }];
-          });
-        } catch (error) {
-          console.warn(`Projects could not be loaded from ${pageUrl}.`, error);
-          return [];
-        }
-      }
+          if (!response.ok) {
 
-      function unique(items) {
-        const map = new Map();
-        items.forEach((project) => {
-          const key = `${project.name}|${project.image}`.toLowerCase();
-          if (!map.has(key)) map.set(key, project);
-        });
-        return [...map.values()];
-      }
+            throw new Error(
+              `Could not load ${pageUrl}`
+            );
 
-      function shuffle(items) {
-        const result = [...items];
-        for (let index = result.length - 1; index > 0; index -= 1) {
-          const randomIndex = Math.floor(Math.random() * (index + 1));
-          [result[index], result[randomIndex]] = [result[randomIndex], result[index]];
-        }
-        return result;
-      }
-
-      function show(index) {
-        if (!slides.length || index < 0 || index >= slides.length) return;
-        slides[current]?.classList.remove("active");
-        dots[current]?.classList.remove("active");
-        current = index;
-        slides[current].classList.add("active");
-        dots[current].classList.add("active");
-        name.textContent = projects[current].name;
-        category.textContent = projects[current].category;
-        number.textContent = `${String(current + 1).padStart(2, "0")} / ${String(projects.length).padStart(2, "0")}`;
-      }
-
-      function stop() {
-        window.clearInterval(timer);
-      }
-
-      function start() {
-        stop();
-        if (!reduceMotion && projects.length > 1 && !document.hidden) {
-          timer = window.setInterval(() => show((current + 1) % projects.length), 5500);
-        }
-      }
-
-      function showNext() {
-        if (projects.length > 1) show((current + 1) % projects.length);
-      }
-
-      function showPrevious() {
-        if (projects.length > 1) show((current - 1 + projects.length) % projects.length);
-      }
-
-      function restartAfterManualChange() {
-        stop();
-        start();
-      }
-
-      function createSlides() {
-        slidesRoot.innerHTML = "";
-        dotsRoot.innerHTML = "";
-
-        projects.forEach((project, index) => {
-          const slide = document.createElement(project.link ? "a" : "div");
-          slide.className = "hero-slide";
-          slide.style.backgroundImage = `url("${project.image}")`;
-          slide.dataset.name = project.name;
-          slide.dataset.category = project.category;
-
-          if (project.link) {
-            slide.href = project.link;
-            slide.setAttribute("aria-label", `View ${project.name}`);
-          } else {
-            slide.setAttribute("aria-label", project.name);
-            slide.setAttribute("aria-disabled", "true");
           }
 
-          const dot = document.createElement("button");
-          dot.type = "button";
-          dot.className = "hero-dot";
-          dot.setAttribute("aria-label", `Show ${project.name}`);
-          dot.addEventListener("click", () => {
-            show(index);
-            start();
-          });
 
-          slidesRoot.append(slide);
-          dotsRoot.append(dot);
-        });
+          const page =
+            new DOMParser().parseFromString(
+              await response.text(),
+              "text/html"
+            );
 
-        slides = [...slidesRoot.children];
-        dots = [...dotsRoot.children];
+
+          const cards =
+            page.querySelectorAll(
+              ".portfolio-card a[href], .portfolio-grid article a[href]"
+            );
+
+
+          return [...cards].flatMap(
+            (card) => {
+
+              const image =
+                card.querySelector("img");
+
+              const imagePath =
+                image?.getAttribute("src");
+
+              const projectPath =
+                card.getAttribute("href");
+
+
+              if (
+                !imagePath ||
+                !projectPath
+              ) {
+                return [];
+              }
+
+
+              const heading =
+                card.querySelector(
+                  "h1, h2, h3, h4"
+                );
+
+
+              return [{
+
+                name:
+                  heading?.textContent.trim() ||
+                  image.alt.trim() ||
+                  "Project",
+
+                category:
+                  categoryName,
+
+                image:
+                  resolvePath(
+                    imagePath,
+                    pageUrl
+                  ),
+
+                link:
+                  resolvePath(
+                    projectPath,
+                    pageUrl
+                  )
+
+              }];
+
+            }
+          );
+
+
+        } catch (error) {
+
+          console.warn(
+            `Projects could not be loaded from ${pageUrl}.`,
+            error
+          );
+
+          return [];
+
+        }
+
       }
 
-      hero.addEventListener("mouseenter", stop);
-      hero.addEventListener("mouseleave", start);
-      hero.addEventListener("focusin", stop);
-      hero.addEventListener("focusout", start);
 
-      hero.addEventListener("wheel", (event) => {
-        if (Math.abs(event.deltaX) < 24 || Math.abs(event.deltaX) <= Math.abs(event.deltaY)) return;
 
-        event.preventDefault();
-        if (wheelLocked) return;
+      function unique(items) {
 
-        wheelLocked = true;
-        event.deltaX > 0 ? showNext() : showPrevious();
-        restartAfterManualChange();
+        const map =
+          new Map();
 
-        window.setTimeout(() => {
-          wheelLocked = false;
-        }, 500);
-      }, { passive: false });
 
-      hero.addEventListener("touchstart", (event) => {
-        touchStartX = event.changedTouches[0].clientX;
-        touchDistanceX = 0;
+        items.forEach(
+          (project) => {
+
+            const key =
+              `${project.name}|${project.image}`
+                .toLowerCase();
+
+
+            if (!map.has(key)) {
+
+              map.set(
+                key,
+                project
+              );
+
+            }
+
+          }
+        );
+
+
+        return [...map.values()];
+
+      }
+
+
+
+      function shuffle(items) {
+
+        const result =
+          [...items];
+
+
+        for (
+          let index =
+            result.length - 1;
+
+          index > 0;
+
+          index -= 1
+        ) {
+
+          const randomIndex =
+            Math.floor(
+              Math.random() *
+              (index + 1)
+            );
+
+
+          [
+            result[index],
+            result[randomIndex]
+          ] =
+          [
+            result[randomIndex],
+            result[index]
+          ];
+
+        }
+
+
+        return result;
+
+      }
+
+
+
+      function show(index) {
+
+        if (
+          !slides.length ||
+          index < 0 ||
+          index >= slides.length
+        ) {
+          return;
+        }
+
+
+        slides[current]?.classList.remove(
+          "active"
+        );
+
+        dots[current]?.classList.remove(
+          "active"
+        );
+
+
+        current =
+          index;
+
+
+        slides[current].classList.add(
+          "active"
+        );
+
+        dots[current].classList.add(
+          "active"
+        );
+
+
+        name.textContent =
+          projects[current].name;
+
+
+        category.textContent =
+          projects[current].category;
+
+
+        number.textContent =
+          `${String(current + 1).padStart(2, "0")} / ${String(projects.length).padStart(2, "0")}`;
+
+      }
+
+
+
+      function stop() {
+
+        window.clearInterval(
+          timer
+        );
+
+      }
+
+
+
+      function start() {
+
         stop();
-      }, { passive: true });
 
-      hero.addEventListener("touchmove", (event) => {
-        touchDistanceX = event.changedTouches[0].clientX - touchStartX;
-      }, { passive: true });
 
-      hero.addEventListener("touchend", () => {
-        if (Math.abs(touchDistanceX) >= 50) {
-          touchDistanceX < 0 ? showNext() : showPrevious();
+        if (
+          !reduceMotion &&
+          projects.length > 1 &&
+          !document.hidden
+        ) {
+
+          timer =
+            window.setInterval(
+              () =>
+                show(
+                  (current + 1) %
+                  projects.length
+                ),
+              5500
+            );
+
         }
 
-        restartAfterManualChange();
-      }, { passive: true });
+      }
 
-      hero.addEventListener("keydown", (event) => {
-        if (event.key === "ArrowRight") {
-          showNext();
+
+
+      function showNext() {
+
+        if (
+          projects.length > 1
+        ) {
+
+          show(
+            (current + 1) %
+            projects.length
+          );
+
+        }
+
+      }
+
+
+
+      function showPrevious() {
+
+        if (
+          projects.length > 1
+        ) {
+
+          show(
+            (
+              current -
+              1 +
+              projects.length
+            ) %
+            projects.length
+          );
+
+        }
+
+      }
+
+
+
+      function restartAfterManualChange() {
+
+        stop();
+        start();
+
+      }
+
+
+
+      function createSlides() {
+
+        slidesRoot.innerHTML =
+          "";
+
+        dotsRoot.innerHTML =
+          "";
+
+
+        projects.forEach(
+          (project, index) => {
+
+            const slide =
+              document.createElement(
+                project.link
+                  ? "a"
+                  : "div"
+              );
+
+
+            slide.className =
+              "hero-slide";
+
+
+            slide.style.backgroundImage =
+              `url("${project.image}")`;
+
+
+            slide.dataset.name =
+              project.name;
+
+
+            slide.dataset.category =
+              project.category;
+
+
+            if (project.link) {
+
+              slide.href =
+                project.link;
+
+
+              slide.setAttribute(
+                "aria-label",
+                `View ${project.name}`
+              );
+
+            } else {
+
+              slide.setAttribute(
+                "aria-label",
+                project.name
+              );
+
+
+              slide.setAttribute(
+                "aria-disabled",
+                "true"
+              );
+
+            }
+
+
+            const dot =
+              document.createElement(
+                "button"
+              );
+
+
+            dot.type =
+              "button";
+
+
+            dot.className =
+              "hero-dot";
+
+
+            dot.setAttribute(
+              "aria-label",
+              `Show ${project.name}`
+            );
+
+
+            dot.addEventListener(
+              "click",
+              () => {
+
+                show(index);
+                start();
+
+              }
+            );
+
+
+            slidesRoot.append(
+              slide
+            );
+
+
+            dotsRoot.append(
+              dot
+            );
+
+          }
+        );
+
+
+        slides =
+          [...slidesRoot.children];
+
+
+        dots =
+          [...dotsRoot.children];
+
+      }
+
+
+
+      hero.addEventListener(
+        "mouseenter",
+        stop
+      );
+
+
+      hero.addEventListener(
+        "mouseleave",
+        start
+      );
+
+
+      hero.addEventListener(
+        "focusin",
+        stop
+      );
+
+
+      hero.addEventListener(
+        "focusout",
+        start
+      );
+
+
+
+      hero.addEventListener(
+        "wheel",
+        (event) => {
+
+          if (
+            Math.abs(event.deltaX) < 24 ||
+            Math.abs(event.deltaX) <=
+              Math.abs(event.deltaY)
+          ) {
+            return;
+          }
+
+
+          event.preventDefault();
+
+
+          if (wheelLocked) {
+            return;
+          }
+
+
+          wheelLocked =
+            true;
+
+
+          event.deltaX > 0
+            ? showNext()
+            : showPrevious();
+
+
           restartAfterManualChange();
-        }
 
-        if (event.key === "ArrowLeft") {
-          showPrevious();
+
+          window.setTimeout(
+            () => {
+
+              wheelLocked =
+                false;
+
+            },
+            500
+          );
+
+        },
+        {
+          passive: false
+        }
+      );
+
+
+
+      hero.addEventListener(
+        "touchstart",
+        (event) => {
+
+          touchStartX =
+            event.changedTouches[0].clientX;
+
+
+          touchDistanceX =
+            0;
+
+
+          stop();
+
+        },
+        {
+          passive: true
+        }
+      );
+
+
+
+      hero.addEventListener(
+        "touchmove",
+        (event) => {
+
+          touchDistanceX =
+            event.changedTouches[0].clientX -
+            touchStartX;
+
+        },
+        {
+          passive: true
+        }
+      );
+
+
+
+      hero.addEventListener(
+        "touchend",
+        () => {
+
+          if (
+            Math.abs(
+              touchDistanceX
+            ) >= 50
+          ) {
+
+            touchDistanceX < 0
+              ? showNext()
+              : showPrevious();
+
+          }
+
+
           restartAfterManualChange();
-        }
-      });
 
-      document.addEventListener("visibilitychange", start);
+        },
+        {
+          passive: true
+        }
+      );
+
+
+
+      hero.addEventListener(
+        "keydown",
+        (event) => {
+
+          if (
+            event.key ===
+            "ArrowRight"
+          ) {
+
+            showNext();
+
+            restartAfterManualChange();
+
+          }
+
+
+          if (
+            event.key ===
+            "ArrowLeft"
+          ) {
+
+            showPrevious();
+
+            restartAfterManualChange();
+
+          }
+
+        }
+      );
+
+
+
+      document.addEventListener(
+        "visibilitychange",
+        start
+      );
+
+
 
       async function initialise() {
-        const [architecture, interiors] = await Promise.all([
-          loadCategory("architecture.html", "Architecture"),
-          loadCategory("interior.html", "Interior Design")
-        ]);
 
-        const loaded = [...architecture, ...interiors];
-        projects = shuffle(unique([
-          ...(loaded.length ? loaded : fallbackProjects),
-          ...productProjects
-        ]));
+        const [
+          architecture,
+          interiors
+        ] =
+          await Promise.all([
+
+            loadCategory(
+              "architecture.html",
+              "Architecture"
+            ),
+
+            loadCategory(
+              "interior.html",
+              "Interior Design"
+            )
+
+          ]);
+
+
+        const loaded =
+          [
+            ...architecture,
+            ...interiors
+          ];
+
+
+        projects =
+          shuffle(
+            unique([
+
+              ...(
+                loaded.length
+                  ? loaded
+                  : fallbackProjects
+              ),
+
+              ...productProjects
+
+            ])
+          );
+
 
         createSlides();
+
         show(0);
+
         start();
+
       }
 
+
       initialise();
+
     })();
   </script>
+
 </body>
 </html>
